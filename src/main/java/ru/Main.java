@@ -2,13 +2,21 @@ package ru;
 
 public class Main {
     public static void main(String[] args) {
+
+        //Задача10 (Вариант решения 1)
+        int res = lastNumSum(lastNumSum(lastNumSum(lastNumSum(5, 11), 123), 14), 1);
+        System.out.println(res);
+
+        //Задача10 (Вариант решения 2)
+        System.out.println(lastNumSum(lastNumSum(lastNumSum(lastNumSum(5, 11), 123), 14), 1));
+
+        /*
         //Задача10
         int res = lastNumSum(5,11);
         res = lastNumSum(res,123);
         res = lastNumSum(res,14);
         res = lastNumSum(res,1);
         System.out.println(res);
-        /*
         //Задача9
         System.out.println(isEqual(3,3,3));
         System.out.println(isEqual(2,15,2));
